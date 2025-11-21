@@ -185,3 +185,9 @@ variable "availability_zone_relocation_enabled" {
   default     = false
   description = "Whether or not the cluster can be relocated to another availability zone, either automatically by AWS or when requested. Available for use on clusters from the RA3 instance family"
 }
+
+variable "maintenance_track_name" {
+  type        = string
+  default     = null
+  description = "The name of the maintenance track for the restored cluster"
+}
